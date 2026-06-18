@@ -1,5 +1,9 @@
 services:
   tunnel7:
+    build:
+      tags:
+        - tunnel7
+    # image: ghcr.io/ichbinbekir/tunnel7:master
     image: tunnel7:latest
     restart: unless-stopped
     network_mode: host
