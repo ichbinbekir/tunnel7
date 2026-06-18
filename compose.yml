@@ -1,0 +1,12 @@
+services:
+  tunnel7:
+    image: tunnel7:latest
+    restart: unless-stopped
+    network_mode: host
+    volumes:
+      - ./data:/data
+
+    # you can change json path
+    # volumes:
+    #   - ./data:/root/data
+    # command: ["-t", "/root/data/tunnels.json"]
